@@ -38,7 +38,7 @@
             <tr>
                 <td style="text-align: left;" class="auto-style3">Date</td>
                 <td>
-                    <asp:Calendar ID="calDepartDt" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" OnLoad="calDepartDt_Load"></asp:Calendar>
+                    <asp:Calendar ID="calDepartDt" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
                 </td>
 
             </tr>
@@ -64,6 +64,7 @@
                 <td class="auto-style4">From</td>
                 <td style="text-align: left;" class="auto-style4">
                     <asp:DropDownList ID="ddlFrom" runat="server">
+                        <asp:ListItem></asp:ListItem>
                         <asp:ListItem>Hentian Duta</asp:ListItem>
                         <asp:ListItem>Hentian Putra</asp:ListItem>
                     </asp:DropDownList>
@@ -73,6 +74,7 @@
                 <td class="auto-style4">Destination</td>
                 <td style="text-align: left;" class="auto-style4">
                     <asp:DropDownList ID="ddlTo" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlTo_SelectedIndexChanged">
+                        <asp:ListItem></asp:ListItem>
                         <asp:ListItem>Butterworth</asp:ListItem>
                         <asp:ListItem>Seremban</asp:ListItem>
                     </asp:DropDownList>
@@ -87,7 +89,7 @@
 
         </table>
 
-        <asp:Label ID="lblError" runat="server" Text="[lblError]"></asp:Label>
+        <p><asp:Label ID="lblError" runat="server" Text="[lblError]" Visible="False"></asp:Label></p>
 
     </form>
 
